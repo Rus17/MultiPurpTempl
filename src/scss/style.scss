@@ -1,0 +1,540 @@
+$primary-font: "Raleway";
+$text-size: 14px;
+$primary-color: #ffffff;
+$secondary-color: #2d3033;
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway - Semi Bold";
+  src: url(./fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Cardo";
+  src: url(./fonts/Cardo-Regular.ttf);
+}
+
+@font-face {
+  font-family: "CardoI";
+  src: url(./fonts/Cardo-Italic.ttf);
+}
+
+
+/* ************************* Header ******************************* */
+.header{
+  background: url(./img/headerPhone.jpg) no-repeat;
+  background-size: 100%;
+  height: 500px;
+}
+
+.navbar{
+  opacity: 0.75;
+  color: $primary-color;
+  font-family: $primary-font;
+  font-size: 13px; 
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.headerContent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  color: $primary-color;
+}
+
+.headerTitle{
+  font-family: "Open Sans";
+  font-size: 65px; 
+  font-weight: 700;
+  line-height: 71px;
+  text-transform: uppercase;
+}
+
+.headerDescr{
+  display: inline-block;
+  text-align: center;
+  font-family: $primary-font;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.headerButton{
+  font-family: "Raleway - Semi Bold";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  width: 200px;
+  height: 46px;
+  background-color: #e84545;
+  color: $primary-color;
+  border: none;
+}
+
+/* ************************* Description ******************************* */
+.descrFlex{
+   text-align: center;
+   
+   div{
+     color: #6c7279;
+     font-family: $primary-font;
+     font-size: $text-size;
+     font-weight: 400;
+     line-height: 21px;
+   }
+   
+   img{
+     height: 60px;
+     margin-top: 50px
+   }
+   
+   h4{
+     color: $secondary-color;
+     font-size: $text-size;
+     font-weight: 700;
+     text-transform: uppercase;
+     margin: 34px auto 25px
+   }
+}
+
+/* ************************* Projects ******************************* */
+
+.projects{
+  display: flex;
+   
+   img{
+     width: 25%;
+   }   
+}
+
+.containerProjects{
+  margin: 50px 0;
+}
+
+.red{
+  background-image: url("./img/Layer_37.jpg");
+  width: 25%;
+  text-align: center;
+   
+   h4{
+     color: $primary-color;
+     font-family: $primary-font;
+     font-size: $text-size;
+     font-weight: 700;
+     text-transform: uppercase;
+     margin-bottom: 15px;
+   }
+   
+   div{
+     color: $primary-color;
+     font-family: $primary-font;
+     font-size: $text-size;
+     font-weight: 400;
+   }
+   
+}
+
+
+
+/* ************************* Cards ******************************* */
+
+.card-body{
+   h6{
+      font-family: $primary-font;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+   }
+   
+   h5{
+      font-family: $primary-font;
+      font-size: 22px;
+      font-weight: 400;
+   }
+   
+   p{
+      color: $secondary-color;
+      font-family: $primary-font;
+      font-size: $text-size;
+      font-weight: 400;
+      line-height: 21px;
+   }  
+}
+
+.horizontCenter{
+   .card{
+      margin: 0 auto;
+   }
+}
+
+.card{
+   img{
+      margin: 0 10px;
+   }
+}
+
+.myBtn{
+   display: inline-block;
+   border: 1px solid #e8ecee;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   
+   img{
+      position: relative;
+      top: 50%;
+      transform: translate(0, -80%);
+   }   
+}
+
+/* ************************* Susan ******************************* */
+
+.susan{
+   display: flex;
+   margin-top: 50px;
+}
+
+.susanItem{
+   width: 50%;
+}
+
+.indicator{
+   width: 10px;
+   height: 10px;
+   background-color: $primary-color;
+   margin: 3px;
+   border-radius: 5px;
+   opacity: 50%
+}
+
+.myCarousel-inner{
+   text-align: left;
+   font-family: "CardoI";
+   font-size: 32px;
+   line-height: 42px;
+   padding-bottom: 30px;
+   
+   h5{
+      font-family: $primary-font;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 21px;
+      text-transform: uppercase;
+      font-style: normal;
+   }   
+}
+
+
+
+
+/* ************************* Download ******************************* */
+
+.download{
+   text-align: center;
+   margin: 70px 0;
+   
+   h1{
+      color: $secondary-color;
+      font-family: $primary-font;
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 32px;
+   }
+   
+   p{
+      color: $secondary-color;
+      font-family: $primary-font;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 21px;
+      text-transform: uppercase;
+      margin: 20px 0 40px 0;
+   }
+   
+}
+
+/* ************************* Footer ******************************* */
+.footer{
+   background-color: #3a3e64;
+   height: 250px;
+}
+
+.footer-item{
+   text-align: center;
+   height: 250px;
+   
+   h5{
+      color: $primary-color;
+      font-family: Raleway;
+      font-size: $text-size;
+      font-weight: 700;
+      text-transform: uppercase;
+   }   
+   
+   p{
+      opacity: 0.5;
+      color: $primary-color;
+      font-family: Raleway;
+      font-size: $text-size;
+      font-weight: 400;
+      line-height: 22.5px;
+   }
+}
+
+.center{
+   position: relative;
+   top: 50%;
+   transform: translate(0, -50%);   
+}
+
+.links{
+   border: 2px solid $primary-color;
+   width: 40px;
+   height: 40px;
+   display: inline-block;
+   margin: 2px;
+   
+   img{
+      position: relative;
+      top: 50%;
+      transform: translate(0, -80%);   
+   }
+}
+
+.copyright{
+   background-color: #313454;
+   height: 95px;
+   color: #808080;
+   font-family: $primary-font;
+   font-size: $text-size;
+   font-weight: 400;
+   line-height: 22.5px;
+   text-align: center;
+   
+   span{
+      color: $primary-color;
+   }   
+}
+
+.myPadd{
+   padding-top: 0;
+}
+
+/* ************************* Media queries **************************/
+
+
+@media screen and (max-width: 1200px) {
+   
+   .header{
+     height: 450px
+   }
+   
+   .headerContent{      
+      align-content: center;
+      height: 300px;
+   }
+   
+   
+   .myCarousel-inner{
+      font-size: 24px;
+      line-height: 42px;
+      padding-bottom: 20px;
+   }
+}
+
+
+@media screen and (max-width: 1000px) {
+   .header{
+     height: 380px
+   }
+   
+   .headerContent{ 
+      height: 250px;
+   }
+   
+   .headerTitle{
+     font-size: 45px;
+     line-height: 50px;
+   }
+   
+   .myCarousel-inner{
+      font-size: 32px;
+      line-height: 42px;
+      padding-bottom: 20px;
+   }
+   
+   .susan{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+   }
+   .susanItem{
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .header{
+     height: 350px
+   }
+   
+   .headerContent{ 
+      height: 200px;
+   }
+   
+   .headerTitle{
+     font-size: 22px;
+     line-height: 38px;
+   }
+   
+   .headerDescr{
+     font-size: 18px;
+     line-height: 22px;
+   }
+
+   .projects{
+     flex-wrap: wrap;
+      
+      img{
+        width: 50%;
+      }
+   }
+      
+   .red{
+     width: 50%;
+   }
+   
+   .footer{
+      height: 200px;
+   }
+
+   .footer-item{
+      height: 100px;
+      }
+   }
+   
+@media screen and (max-width: 700px) {
+   .header{
+     height: 200px
+   }
+   
+   .headerContent{ 
+      height: 150px;
+   }
+   
+   .headerTitle{
+     font-size: 28px;
+     line-height: 32px;
+   }
+   
+   .headerDescr{
+     display: none;
+   }
+   
+   .footer{
+      height: 200px;
+   }
+
+   .footer-item{
+      height: 100px;
+      }
+   }
+   
+@media screen and (max-width: 576px) {
+   
+   .header{
+     height: 200px
+   }
+   
+   .myCarousel-inner{
+      font-size: 22px;
+      line-height: 22px;
+      padding-bottom: 0;
+   }
+   
+   .headerContent{ 
+      height: 100px;
+   }
+   
+   .headerTitle{
+     font-size: 26px;
+     line-height: 32px;
+   }
+    
+   .footer{
+      height: 300px;
+   }
+
+   .footer-item{
+      height: 100px;
+      }
+   }
+
+   
+
+@media screen and (max-width: 460px) {
+   
+   .header{
+     height: 150px
+   }
+   
+   .headerContent{
+      height: 50px;
+   }
+   
+   .headerTitle{
+     font-size: 18px;
+     line-height: 18px;
+   }
+   
+   .logo{
+      width: 150px;
+   }
+   
+   .headerButton{     
+     width: 200px;
+     height: 26px;     
+   }
+   
+   .myCarousel-inner{
+      font-size: 18px;
+      line-height: 22px;
+      
+      h5{
+         font-size: 10px;
+         line-height: $text-size;
+         margin: 0;
+      }
+      
+      p{  
+         margin: 0;
+      }      
+   }
+   
+   .projects{
+      flex-wrap: wrap;
+      
+      img{
+        width: 100%;
+      }
+   }  
+   
+   .red{
+     width: 100%;
+     height: 70vh;   
+   }  
+   
+}
