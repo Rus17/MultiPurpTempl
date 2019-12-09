@@ -14,11 +14,6 @@ $secondary-color: #2d3033;
 }
 
 @font-face {
-  font-family: "Raleway - Semi Bold";
-  src: url(./fonts/Raleway-SemiBold.ttf);
-}
-
-@font-face {
   font-family: "Cardo";
   src: url(./fonts/Cardo-Regular.ttf);
 }
@@ -30,9 +25,9 @@ $secondary-color: #2d3033;
 
 
 /* ************************* Header ******************************* */
-.header{
+header{
   background: url(./img/headerPhone.jpg) no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 500px;
 }
 
@@ -72,9 +67,9 @@ $secondary-color: #2d3033;
 }
 
 .headerButton{
-  font-family: "Raleway - Semi Bold";
+  font-family: $primary-font;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 21px;
   text-transform: uppercase;
   width: 200px;
@@ -175,16 +170,12 @@ $secondary-color: #2d3033;
 }
 
 .horizontCenter{
+      
    .card{
       margin: 0 auto;
    }
 }
 
-.card{
-   img{
-      margin: 0 10px;
-   }
-}
 
 .myBtn{
    display: inline-block;
@@ -267,7 +258,7 @@ $secondary-color: #2d3033;
 }
 
 /* ************************* Footer ******************************* */
-.footer{
+footer{
    background-color: #3a3e64;
    height: 250px;
 }
@@ -338,13 +329,12 @@ $secondary-color: #2d3033;
 
 @media screen and (max-width: 1200px) {
    
-   .header{
+   header{
      height: 450px
    }
    
-   .headerContent{      
-      align-content: center;
-      height: 300px;
+   .headerContent{
+      height: 400px;
    }
    
    
@@ -353,16 +343,17 @@ $secondary-color: #2d3033;
       line-height: 42px;
       padding-bottom: 20px;
    }
+      
 }
 
 
 @media screen and (max-width: 1000px) {
-   .header{
+   header{
      height: 380px
    }
    
    .headerContent{ 
-      height: 250px;
+      height: 310px;
    }
    
    .headerTitle{
@@ -387,16 +378,16 @@ $secondary-color: #2d3033;
 }
 
 @media screen and (max-width: 800px) {
-   .header{
+   header{
      height: 350px
    }
    
    .headerContent{ 
-      height: 200px;
+      height: 300px;
    }
    
    .headerTitle{
-     font-size: 22px;
+     font-size: 32px;
      line-height: 38px;
    }
    
@@ -417,7 +408,7 @@ $secondary-color: #2d3033;
      width: 50%;
    }
    
-   .footer{
+   footer{
       height: 200px;
    }
 
@@ -427,24 +418,24 @@ $secondary-color: #2d3033;
    }
    
 @media screen and (max-width: 700px) {
-   .header{
-     height: 200px
+   header{
+     height: 300px
    }
    
    .headerContent{ 
-      height: 150px;
+      height: 250px;
    }
    
    .headerTitle{
-     font-size: 28px;
-     line-height: 32px;
+     font-size: 32px;
+     line-height: 38px;
    }
    
    .headerDescr{
      display: none;
    }
    
-   .footer{
+   footer{
       height: 200px;
    }
 
@@ -455,18 +446,10 @@ $secondary-color: #2d3033;
    
 @media screen and (max-width: 576px) {
    
-   .header{
-     height: 200px
-   }
-   
    .myCarousel-inner{
       font-size: 22px;
-      line-height: 22px;
+      line-height: 32px;
       padding-bottom: 0;
-   }
-   
-   .headerContent{ 
-      height: 100px;
    }
    
    .headerTitle{
@@ -474,7 +457,7 @@ $secondary-color: #2d3033;
      line-height: 32px;
    }
     
-   .footer{
+   footer{
       height: 300px;
    }
 
@@ -487,28 +470,15 @@ $secondary-color: #2d3033;
 
 @media screen and (max-width: 460px) {
    
-   .header{
-     height: 150px
-   }
-   
-   .headerContent{
-      height: 50px;
-   }
-   
+     
    .headerTitle{
-     font-size: 18px;
-     line-height: 18px;
+     text-align: center;
    }
    
    .logo{
       width: 150px;
    }
-   
-   .headerButton{     
-     width: 200px;
-     height: 26px;     
-   }
-   
+      
    .myCarousel-inner{
       font-size: 18px;
       line-height: 22px;

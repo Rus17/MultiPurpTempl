@@ -1,9 +1,9 @@
-let path = require('path');
-let ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
-let conf = {
+const conf = {
    entry: './src/index.js',
 
    output: {
