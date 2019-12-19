@@ -31,6 +31,7 @@ header{
   height: 500px;
 }
 
+
 .navbar{
   opacity: 0.75;
   color: $primary-color;
@@ -49,7 +50,8 @@ header{
   color: $primary-color;
 }
 
-.headerTitle{
+.headerTitle{   
+  margin-top: 56px; 
   font-family: "Open Sans";
   font-size: 65px; 
   font-weight: 700;
@@ -334,7 +336,7 @@ footer{
    }
    
    .headerContent{
-      height: 400px;
+      height: 350px;
    }
    
    
@@ -353,7 +355,7 @@ footer{
    }
    
    .headerContent{ 
-      height: 310px;
+      height: 290px;
    }
    
    .headerTitle{
@@ -383,11 +385,11 @@ footer{
    }
    
    .headerContent{ 
-      height: 300px;
+      height: 250px;
    }
    
    .headerTitle{
-     font-size: 32px;
+     font-size: 36px;
      line-height: 38px;
    }
    
@@ -419,7 +421,7 @@ footer{
    
 @media screen and (max-width: 700px) {
    header{
-     height: 300px
+     height: 350px
    }
    
    .headerContent{ 
@@ -427,13 +429,9 @@ footer{
    }
    
    .headerTitle{
-     font-size: 32px;
+     font-size: 36px;
      line-height: 38px;
-   }
-   
-   .headerDescr{
-     display: none;
-   }
+   } 
    
    footer{
       height: 200px;
@@ -453,7 +451,7 @@ footer{
    }
    
    .headerTitle{
-     font-size: 26px;
+     font-size: 30px;
      line-height: 32px;
    }
     
@@ -473,6 +471,10 @@ footer{
      
    .headerTitle{
      text-align: center;
+   }
+   
+   .headerDescr{
+     display: none;
    }
    
    .logo{
