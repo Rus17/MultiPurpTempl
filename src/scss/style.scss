@@ -36,7 +36,7 @@ header{
   opacity: 0.75;
   color: $primary-color;
   font-family: $primary-font;
-  font-size: 13px; 
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -50,10 +50,10 @@ header{
   color: $primary-color;
 }
 
-.headerTitle{   
-  margin-top: 56px; 
+.headerTitle{
+  margin-top: 56px;
   font-family: "Open Sans";
-  font-size: 65px; 
+  font-size: 65px;
   font-weight: 700;
   line-height: 71px;
   text-transform: uppercase;
@@ -84,7 +84,7 @@ header{
 /* ************************* Description ******************************* */
 .descrFlex{
    text-align: center;
-   
+
    div{
      color: #6c7279;
      font-family: $primary-font;
@@ -92,12 +92,12 @@ header{
      font-weight: 400;
      line-height: 21px;
    }
-   
+
    img{
      height: 60px;
      margin-top: 50px
    }
-   
+
    h4{
      color: $secondary-color;
      font-size: $text-size;
@@ -111,21 +111,54 @@ header{
 
 .projects{
   display: flex;
-   
-   img{
+
+   .image{
      width: 25%;
-   }   
+     position: relative;
+
+
+     img{
+       width: 100%;
+       &:hover{
+         opacity: 0.1;
+       }
+     }
+
+     .text{
+       position: absolute;
+       width: 100%;
+       top: 40%;
+       color: $primary-color;
+       text-align: center;
+       h4{
+         font-family: $primary-font;
+         font-size: $text-size;
+         font-weight: 700;
+         text-transform: uppercase;
+         margin-bottom: 15px;
+       }
+       div{
+         color: $primary-color;
+         font-family: $primary-font;
+         font-size: $text-size;
+         font-weight: 400;
+       }
+     }
+
+   }
 }
 
 .containerProjects{
   margin: 50px 0;
+  background-color: #e74545;
 }
 
+/*
 .red{
   background-image: url("./img/Layer_37.jpg");
   width: 25%;
   text-align: center;
-   
+
    h4{
      color: $primary-color;
      font-family: $primary-font;
@@ -134,15 +167,15 @@ header{
      text-transform: uppercase;
      margin-bottom: 15px;
    }
-   
+
    div{
      color: $primary-color;
      font-family: $primary-font;
      font-size: $text-size;
      font-weight: 400;
    }
-   
 }
+*/
 
 
 
@@ -155,24 +188,24 @@ header{
       font-weight: 400;
       text-transform: uppercase;
    }
-   
+
    h5{
       font-family: $primary-font;
       font-size: 22px;
       font-weight: 400;
    }
-   
+
    p{
       color: $secondary-color;
       font-family: $primary-font;
       font-size: $text-size;
       font-weight: 400;
       line-height: 21px;
-   }  
+   }
 }
 
 .horizontCenter{
-      
+
    .card{
       margin: 0 auto;
    }
@@ -185,12 +218,12 @@ header{
    width: 40px;
    height: 40px;
    text-align: center;
-   
+
    img{
       position: relative;
       top: 50%;
       transform: translate(0, -80%);
-   }   
+   }
 }
 
 /* ************************* Susan ******************************* */
@@ -219,7 +252,7 @@ header{
    font-size: 32px;
    line-height: 42px;
    padding-bottom: 30px;
-   
+
    h5{
       font-family: $primary-font;
       font-size: 13px;
@@ -227,7 +260,7 @@ header{
       line-height: 21px;
       text-transform: uppercase;
       font-style: normal;
-   }   
+   }
 }
 
 
@@ -238,7 +271,7 @@ header{
 .download{
    text-align: center;
    margin: 70px 0;
-   
+
    h1{
       color: $secondary-color;
       font-family: $primary-font;
@@ -246,7 +279,7 @@ header{
       font-weight: 300;
       line-height: 32px;
    }
-   
+
    p{
       color: $secondary-color;
       font-family: $primary-font;
@@ -256,7 +289,7 @@ header{
       text-transform: uppercase;
       margin: 20px 0 40px 0;
    }
-   
+
 }
 
 /* ************************* Footer ******************************* */
@@ -268,15 +301,15 @@ footer{
 .footer-item{
    text-align: center;
    height: 250px;
-   
+
    h5{
       color: $primary-color;
       font-family: Raleway;
       font-size: $text-size;
       font-weight: 700;
       text-transform: uppercase;
-   }   
-   
+   }
+
    p{
       opacity: 0.5;
       color: $primary-color;
@@ -290,7 +323,7 @@ footer{
 .center{
    position: relative;
    top: 50%;
-   transform: translate(0, -50%);   
+   transform: translate(0, -50%);
 }
 
 .links{
@@ -299,11 +332,11 @@ footer{
    height: 40px;
    display: inline-block;
    margin: 2px;
-   
+
    img{
       position: relative;
       top: 50%;
-      transform: translate(0, -80%);   
+      transform: translate(0, -80%);
    }
 }
 
@@ -316,10 +349,10 @@ footer{
    font-weight: 400;
    line-height: 22.5px;
    text-align: center;
-   
+
    span{
       color: $primary-color;
-   }   
+   }
 }
 
 .myPadd{
@@ -330,22 +363,22 @@ footer{
 
 
 @media screen and (max-width: 1200px) {
-   
+
    header{
      height: 450px
    }
-   
+
    .headerContent{
       height: 350px;
    }
-   
-   
+
+
    .myCarousel-inner{
       font-size: 24px;
       line-height: 42px;
       padding-bottom: 20px;
    }
-      
+
 }
 
 
@@ -353,22 +386,22 @@ footer{
    header{
      height: 380px
    }
-   
-   .headerContent{ 
+
+   .headerContent{
       height: 290px;
    }
-   
+
    .headerTitle{
      font-size: 45px;
      line-height: 50px;
    }
-   
+
    .myCarousel-inner{
       font-size: 32px;
       line-height: 42px;
       padding-bottom: 20px;
    }
-   
+
    .susan{
       display: flex;
       flex-wrap: wrap;
@@ -383,16 +416,16 @@ footer{
    header{
      height: 350px
    }
-   
-   .headerContent{ 
+
+   .headerContent{
       height: 250px;
    }
-   
+
    .headerTitle{
      font-size: 36px;
      line-height: 38px;
    }
-   
+
    .headerDescr{
      font-size: 18px;
      line-height: 22px;
@@ -400,16 +433,16 @@ footer{
 
    .projects{
      flex-wrap: wrap;
-      
+
       img{
         width: 50%;
       }
    }
-      
+
    .red{
      width: 50%;
    }
-   
+
    footer{
       height: 200px;
    }
@@ -418,21 +451,21 @@ footer{
       height: 100px;
       }
    }
-   
+
 @media screen and (max-width: 700px) {
    header{
      height: 350px
    }
-   
-   .headerContent{ 
+
+   .headerContent{
       height: 250px;
    }
-   
+
    .headerTitle{
      font-size: 36px;
      line-height: 38px;
-   } 
-   
+   }
+
    footer{
       height: 200px;
    }
@@ -441,20 +474,20 @@ footer{
       height: 100px;
       }
    }
-   
+
 @media screen and (max-width: 576px) {
-   
+
    .myCarousel-inner{
       font-size: 22px;
       line-height: 32px;
       padding-bottom: 0;
    }
-   
+
    .headerTitle{
      font-size: 30px;
      line-height: 32px;
    }
-    
+
    footer{
       height: 300px;
    }
@@ -464,49 +497,49 @@ footer{
       }
    }
 
-   
+
 
 @media screen and (max-width: 460px) {
-   
-     
+
+
    .headerTitle{
      text-align: center;
    }
-   
+
    .headerDescr{
      display: none;
    }
-   
+
    .logo{
       width: 150px;
    }
-      
+
    .myCarousel-inner{
       font-size: 18px;
       line-height: 22px;
-      
+
       h5{
          font-size: 10px;
          line-height: $text-size;
          margin: 0;
       }
-      
-      p{  
+
+      p{
          margin: 0;
-      }      
+      }
    }
-   
+
    .projects{
       flex-wrap: wrap;
-      
+
       img{
         width: 100%;
       }
-   }  
-   
+   }
+
    .red{
      width: 100%;
-     height: 70vh;   
-   }  
-   
+     height: 70vh;
+   }
+
 }

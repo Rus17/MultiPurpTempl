@@ -105,29 +105,58 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  .projects img {
-    width: 25%; }
+  .projects .image {
+    width: 25%;
+    position: relative; }
+    .projects .image img {
+      width: 100%; }
+      .projects .image img:hover {
+        opacity: 0.1; }
+    .projects .image .text {
+      position: absolute;
+      width: 100%;
+      top: 40%;
+      color: #ffffff;
+      text-align: center; }
+      .projects .image .text h4 {
+        font-family: "Raleway";
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 15px; }
+      .projects .image .text div {
+        color: #ffffff;
+        font-family: "Raleway";
+        font-size: 14px;
+        font-weight: 400; }
 
 .containerProjects {
-  margin: 50px 0; }
+  margin: 50px 0;
+  background-color: #e74545; }
 
-.red {
+/*
+.red{
   background-image: url("./img/Layer_37.jpg");
   width: 25%;
-  text-align: center; }
-  .red h4 {
-    color: #ffffff;
-    font-family: "Raleway";
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 15px; }
-  .red div {
-    color: #ffffff;
-    font-family: "Raleway";
-    font-size: 14px;
-    font-weight: 400; }
+  text-align: center;
 
+   h4{
+     color: $primary-color;
+     font-family: $primary-font;
+     font-size: $text-size;
+     font-weight: 700;
+     text-transform: uppercase;
+     margin-bottom: 15px;
+   }
+
+   div{
+     color: $primary-color;
+     font-family: $primary-font;
+     font-size: $text-size;
+     font-weight: 400;
+   }
+}
+*/
 /* ************************* Cards ******************************* */
 .card-body h6 {
   font-family: "Raleway";
