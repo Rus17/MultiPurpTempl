@@ -79,6 +79,7 @@ header{
   background-color: #e84545;
   color: $primary-color;
   border: none;
+  margin-top: 20px;
 }
 
 /* ************************* Description ******************************* */
@@ -116,68 +117,44 @@ header{
      width: 25%;
      position: relative;
 
-
      img{
        width: 100%;
-       &:hover{
-         opacity: 0.1;
-       }
      }
 
      .text{
        position: absolute;
+       top: 0;
+       opacity: 0;
+       height: 100%;
        width: 100%;
-       top: 40%;
        color: $primary-color;
+       font-family: $primary-font;
+       font-size: $text-size;
        text-align: center;
+       background-color: #e74545;
+
+       &:hover{
+         opacity: 0.9;
+       }
+
        h4{
-         font-family: $primary-font;
-         font-size: $text-size;
+         margin-top: 30%;
          font-weight: 700;
          text-transform: uppercase;
          margin-bottom: 15px;
-       }
-       div{
-         color: $primary-color;
-         font-family: $primary-font;
          font-size: $text-size;
+       }
+
+       div{
          font-weight: 400;
        }
      }
-
    }
 }
 
 .containerProjects{
   margin: 50px 0;
-  background-color: #e74545;
 }
-
-/*
-.red{
-  background-image: url("./img/Layer_37.jpg");
-  width: 25%;
-  text-align: center;
-
-   h4{
-     color: $primary-color;
-     font-family: $primary-font;
-     font-size: $text-size;
-     font-weight: 700;
-     text-transform: uppercase;
-     margin-bottom: 15px;
-   }
-
-   div{
-     color: $primary-color;
-     font-family: $primary-font;
-     font-size: $text-size;
-     font-weight: 400;
-   }
-}
-*/
-
-
 
 /* ************************* Cards ******************************* */
 
@@ -226,34 +203,52 @@ header{
    }
 }
 
-/* ************************* Susan ******************************* */
+/* ************************* Testimonials ******************************* */
 
-.susan{
-   display: flex;
-   margin-top: 50px;
-}
+#testimonials{
+  margin-top: 50px;
+  color: $primary-color;
 
-.susanItem{
-   width: 50%;
-}
+  .slider-item{
+    // height: 100%;
+  }
 
-.indicator{
-   width: 10px;
-   height: 10px;
-   background-color: $primary-color;
-   margin: 3px;
-   border-radius: 5px;
-   opacity: 50%
-}
+  .carousel-indicators{
+    margin-left: 50%;
+  }
 
-.myCarousel-inner{
-   text-align: left;
-   font-family: "CardoI";
-   font-size: 32px;
-   line-height: 42px;
-   padding-bottom: 30px;
+  .item-left{
+    padding: 0;
+  }
 
-   h5{
+  .indicator{
+     width: 10px;
+     height: 10px;
+     background-color: $primary-color;
+     margin: 3px;
+     border-radius: 5px;
+     opacity: 50%;
+  }
+
+  .bg-text{
+    background-color: #523549;
+  }
+
+  .review{
+     margin-top: 5%;
+     margin-left: 10%;
+     width: 70%;
+     text-align: left;
+     font-family: "CardoI";
+     // font-size: 32px;
+     font-size: 3vw;
+     // line-height: 42px;
+     line-height: 4vw;
+     padding-bottom: 30px;
+  }
+
+  .review-author{
+      margin-top: 20px;
       font-family: $primary-font;
       font-size: 13px;
       font-weight: 700;
@@ -262,9 +257,6 @@ header{
       font-style: normal;
    }
 }
-
-
-
 
 /* ************************* Download ******************************* */
 
@@ -402,17 +394,15 @@ footer{
       padding-bottom: 20px;
    }
 
-   .susan{
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 50px;
-   }
-   .susanItem{
-      width: 100%;
-   }
+   #testimonials{
+     .review{
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
    header{
      height: 350px
    }
@@ -422,8 +412,8 @@ footer{
    }
 
    .headerTitle{
-     font-size: 36px;
-     line-height: 38px;
+     font-size: 38px;
+     line-height: 45px;
    }
 
    .headerDescr{
@@ -434,14 +424,17 @@ footer{
    .projects{
      flex-wrap: wrap;
 
-      img{
+      .image{
         width: 50%;
       }
    }
 
-   .red{
-     width: 50%;
-   }
+   #testimonials{
+     .review{
+        font-size: 32px;
+        line-height: 32px;
+    }
+  }
 
    footer{
       height: 200px;
@@ -488,6 +481,13 @@ footer{
      line-height: 32px;
    }
 
+   #testimonials{
+     .review{
+        font-size: 26px;
+        line-height: 32px;
+    }
+  }
+
    footer{
       height: 300px;
    }
@@ -532,14 +532,9 @@ footer{
    .projects{
       flex-wrap: wrap;
 
-      img{
+      .image{
         width: 100%;
       }
-   }
-
-   .red{
-     width: 100%;
-     height: 70vh;
    }
 
 }
