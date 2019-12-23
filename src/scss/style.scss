@@ -84,123 +84,123 @@ header{
 
 /* ************************* Description ******************************* */
 .descrFlex{
-   text-align: center;
+  text-align: center;
 
-   div{
-     color: #6c7279;
-     font-family: $primary-font;
-     font-size: $text-size;
-     font-weight: 400;
-     line-height: 21px;
-   }
+  div{
+    color: #6c7279;
+    font-family: $primary-font;
+    font-size: $text-size;
+    font-weight: 400;
+    line-height: 21px;
+  }
 
-   img{
-     height: 60px;
-     margin-top: 50px
-   }
+  img{
+    height: 60px;
+    margin-top: 50px
+  }
 
-   h4{
-     color: $secondary-color;
-     font-size: $text-size;
-     font-weight: 700;
-     text-transform: uppercase;
-     margin: 34px auto 25px
-   }
+  h4{
+    color: $secondary-color;
+    font-size: $text-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 34px auto 25px
+  }
 }
 
-/* ************************* Projects ******************************* */
+/* ************************* Works ******************************* */
+
+#works{
+  margin: 50px 0;
+}
 
 .projects{
   display: flex;
 
-   .image{
-     width: 25%;
-     position: relative;
+  .image{
+    width: 25%;
+    position: relative;
 
-     img{
-       width: 100%;
-     }
+    img{
+      width: 100%;
+    }
 
-     .text{
-       position: absolute;
-       top: 0;
-       opacity: 0;
-       height: 100%;
-       width: 100%;
-       color: $primary-color;
-       font-family: $primary-font;
-       font-size: $text-size;
-       text-align: center;
-       background-color: #e74545;
+    .text{
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+      color: $primary-color;
+      font-family: $primary-font;
+      font-size: $text-size - 4;
+      text-align: center;
+      background-color: #e74545;
 
-       &:hover{
-         opacity: 0.9;
-       }
+      &:hover{
+        opacity: 0.9;
+      }
 
-       h4{
-         margin-top: 30%;
-         font-weight: 700;
-         text-transform: uppercase;
-         margin-bottom: 15px;
-         font-size: $text-size;
-       }
+      h4{
+        margin-top: 30%;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: $text-size - 4;
+      }
 
-       div{
-         font-weight: 400;
-       }
-     }
-   }
+      div{
+        font-weight: 400;
+      }
+    }
+  }
 }
 
-.containerProjects{
-  margin: 50px 0;
-}
-
-/* ************************* Cards ******************************* */
+/* ************************* OurTeam ******************************* */
 
 .card-body{
-   h6{
-      font-family: $primary-font;
-      font-size: 13px;
-      font-weight: 400;
-      text-transform: uppercase;
-   }
+  h6{
+    font-family: $primary-font;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 
-   h5{
-      font-family: $primary-font;
-      font-size: 22px;
-      font-weight: 400;
-   }
+  h5{
+    font-family: $primary-font;
+    font-size: 22px;
+    font-weight: 400;
+  }
 
-   p{
-      color: $secondary-color;
-      font-family: $primary-font;
-      font-size: $text-size;
-      font-weight: 400;
-      line-height: 21px;
-   }
+  p{
+    color: $secondary-color;
+    font-family: $primary-font;
+    font-size: $text-size;
+    font-weight: 400;
+    line-height: 21px;
+  }
 }
 
 .horizontCenter{
 
-   .card{
-      margin: 0 auto;
-   }
+  .card{
+    margin: 0 auto;
+  }
 }
 
 
 .myBtn{
-   display: inline-block;
-   border: 1px solid #e8ecee;
-   width: 40px;
-   height: 40px;
-   text-align: center;
+  display: inline-block;
+  border: 1px solid #e8ecee;
+  width: 40px;
+  height: 40px;
+  text-align: center;
 
-   img{
-      position: relative;
-      top: 50%;
-      transform: translate(0, -80%);
-   }
+  img{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -80%);
+  }
 }
 
 /* ************************* Testimonials ******************************* */
@@ -222,12 +222,12 @@ header{
   }
 
   .indicator{
-     width: 10px;
-     height: 10px;
-     background-color: $primary-color;
-     margin: 3px;
-     border-radius: 5px;
-     opacity: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: $primary-color;
+    margin: 3px;
+    border-radius: 5px;
+    opacity: 50%;
   }
 
   .bg-text{
@@ -235,120 +235,120 @@ header{
   }
 
   .review{
-     margin-top: 5%;
-     margin-left: 10%;
-     width: 70%;
-     text-align: left;
-     font-family: "CardoI";
-     // font-size: 32px;
-     font-size: 3vw;
-     // line-height: 42px;
-     line-height: 4vw;
-     padding-bottom: 30px;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 70%;
+    text-align: left;
+    font-family: "CardoI";
+    // font-size: 32px;
+    font-size: 3vw;
+    // line-height: 42px;
+    line-height: 4vw;
+    padding-bottom: 30px;
   }
 
   .review-author{
-      margin-top: 20px;
-      font-family: $primary-font;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 21px;
-      text-transform: uppercase;
-      font-style: normal;
-   }
+    margin-top: 20px;
+    font-family: $primary-font;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-style: normal;
+  }
 }
 
 /* ************************* Download ******************************* */
 
-.download{
-   text-align: center;
-   margin: 70px 0;
+#download{
+  text-align: center;
+  margin: 70px 0;
 
-   h1{
-      color: $secondary-color;
-      font-family: $primary-font;
-      font-size: 28px;
-      font-weight: 300;
-      line-height: 32px;
-   }
+  h1{
+    color: $secondary-color;
+    font-family: $primary-font;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 32px;
+  }
 
-   p{
-      color: $secondary-color;
-      font-family: $primary-font;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 21px;
-      text-transform: uppercase;
-      margin: 20px 0 40px 0;
-   }
+  p{
+    color: $secondary-color;
+    font-family: $primary-font;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin: 20px 0 40px 0;
+  }
 
 }
 
 /* ************************* Footer ******************************* */
 footer{
-   background-color: #3a3e64;
-   height: 250px;
+  background-color: #3a3e64;
+  height: 250px;
 }
 
 .footer-item{
-   text-align: center;
-   height: 250px;
+  text-align: center;
+  height: 250px;
 
-   h5{
-      color: $primary-color;
-      font-family: Raleway;
-      font-size: $text-size;
-      font-weight: 700;
-      text-transform: uppercase;
-   }
+  h5{
+    color: $primary-color;
+    font-family: Raleway;
+    font-size: $text-size;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 
-   p{
-      opacity: 0.5;
-      color: $primary-color;
-      font-family: Raleway;
-      font-size: $text-size;
-      font-weight: 400;
-      line-height: 22.5px;
-   }
+  p{
+    opacity: 0.5;
+    color: $primary-color;
+    font-family: Raleway;
+    font-size: $text-size;
+    font-weight: 400;
+    line-height: 22.5px;
+  }
 }
 
 .center{
-   position: relative;
-   top: 50%;
-   transform: translate(0, -50%);
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .links{
-   border: 2px solid $primary-color;
-   width: 40px;
-   height: 40px;
-   display: inline-block;
-   margin: 2px;
+  border: 2px solid $primary-color;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 2px;
 
-   img{
-      position: relative;
-      top: 50%;
-      transform: translate(0, -80%);
-   }
+  img{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -80%);
+  }
 }
 
 .copyright{
-   background-color: #313454;
-   height: 95px;
-   color: #808080;
-   font-family: $primary-font;
-   font-size: $text-size;
-   font-weight: 400;
-   line-height: 22.5px;
-   text-align: center;
+  background-color: #313454;
+  height: 95px;
+  color: #808080;
+  font-family: $primary-font;
+  font-size: $text-size;
+  font-weight: 400;
+  line-height: 22.5px;
+  text-align: center;
 
-   span{
-      color: $primary-color;
-   }
+  span{
+    color: $primary-color;
+  }
 }
 
 .myPadd{
-   padding-top: 0;
+  padding-top: 0;
 }
 
 /* ************************* Media queries **************************/
@@ -356,185 +356,185 @@ footer{
 
 @media screen and (max-width: 1200px) {
 
-   header{
-     height: 450px
-   }
+  header{
+    height: 450px
+  }
 
-   .headerContent{
-      height: 350px;
-   }
+  .headerContent{
+    height: 350px;
+  }
 
 
-   .myCarousel-inner{
-      font-size: 24px;
-      line-height: 42px;
-      padding-bottom: 20px;
-   }
+  .myCarousel-inner{
+    font-size: 24px;
+    line-height: 42px;
+    padding-bottom: 20px;
+  }
 
 }
 
 
 @media screen and (max-width: 1000px) {
-   header{
-     height: 380px
-   }
+  header{
+    height: 380px
+  }
 
-   .headerContent{
-      height: 290px;
-   }
+  .headerContent{
+    height: 290px;
+  }
 
-   .headerTitle{
-     font-size: 45px;
-     line-height: 50px;
-   }
+  .headerTitle{
+    font-size: 45px;
+    line-height: 50px;
+  }
 
-   .myCarousel-inner{
-      font-size: 32px;
-      line-height: 42px;
-      padding-bottom: 20px;
-   }
+  .myCarousel-inner{
+    font-size: 32px;
+    line-height: 42px;
+    padding-bottom: 20px;
+  }
 
-   #testimonials{
-     .review{
-        font-size: 3vw;
-        line-height: 3vw;
+  #testimonials{
+    .review{
+      font-size: 3vw;
+      line-height: 3vw;
     }
   }
 }
 
 @media screen and (max-width: 767px) {
-   header{
-     height: 350px
-   }
+  header{
+    height: 350px
+  }
 
-   .headerContent{
-      height: 250px;
-   }
+  .headerContent{
+    height: 250px;
+  }
 
-   .headerTitle{
-     font-size: 38px;
-     line-height: 45px;
-   }
+  .headerTitle{
+    font-size: 36px;
+    line-height: 45px;
+  }
 
-   .headerDescr{
-     font-size: 18px;
-     line-height: 22px;
-   }
+  .headerDescr{
+    font-size: 18px;
+    line-height: 22px;
+  }
 
-   .projects{
-     flex-wrap: wrap;
+  .projects{
+    flex-wrap: wrap;
 
-      .image{
-        width: 50%;
-      }
-   }
-
-   #testimonials{
-     .review{
-        font-size: 32px;
-        line-height: 32px;
+    .image{
+      width: 50%;
     }
   }
 
-   footer{
-      height: 200px;
-   }
+  #testimonials{
+    .review{
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
 
-   .footer-item{
-      height: 100px;
-      }
-   }
+  footer{
+    height: 200px;
+  }
+
+  .footer-item{
+    height: 100px;
+  }
+}
 
 @media screen and (max-width: 700px) {
-   header{
-     height: 350px
-   }
+  header{
+    height: 350px
+  }
 
-   .headerContent{
-      height: 250px;
-   }
+  .headerContent{
+    height: 250px;
+  }
 
-   .headerTitle{
-     font-size: 36px;
-     line-height: 38px;
-   }
+  .headerTitle{
+    font-size: 36px;
+    line-height: 38px;
+  }
 
-   footer{
-      height: 200px;
-   }
+  footer{
+    height: 200px;
+  }
 
-   .footer-item{
-      height: 100px;
-      }
-   }
+  .footer-item{
+    height: 100px;
+  }
+}
 
 @media screen and (max-width: 576px) {
 
-   .myCarousel-inner{
-      font-size: 22px;
+  .myCarousel-inner{
+    font-size: 22px;
+    line-height: 32px;
+    padding-bottom: 0;
+  }
+
+  .headerTitle{
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  #testimonials{
+    .review{
+      font-size: 26px;
       line-height: 32px;
-      padding-bottom: 0;
-   }
-
-   .headerTitle{
-     font-size: 30px;
-     line-height: 32px;
-   }
-
-   #testimonials{
-     .review{
-        font-size: 26px;
-        line-height: 32px;
     }
   }
 
-   footer{
-      height: 300px;
-   }
+  footer{
+    height: 300px;
+  }
 
-   .footer-item{
-      height: 100px;
-      }
-   }
+  .footer-item{
+    height: 100px;
+  }
+}
 
 
 
 @media screen and (max-width: 460px) {
 
 
-   .headerTitle{
-     text-align: center;
-   }
+  .headerTitle{
+    text-align: center;
+  }
 
-   .headerDescr{
-     display: none;
-   }
+  .headerDescr{
+    display: none;
+  }
 
-   .logo{
-      width: 150px;
-   }
+  .logo{
+    width: 150px;
+  }
 
-   .myCarousel-inner{
-      font-size: 18px;
-      line-height: 22px;
+  .myCarousel-inner{
+    font-size: 18px;
+    line-height: 22px;
 
-      h5{
-         font-size: 10px;
-         line-height: $text-size;
-         margin: 0;
-      }
+    h5{
+      font-size: 10px;
+      line-height: $text-size;
+      margin: 0;
+    }
 
-      p{
-         margin: 0;
-      }
-   }
+    p{
+      margin: 0;
+    }
+  }
 
-   .projects{
-      flex-wrap: wrap;
+  .projects{
+    flex-wrap: wrap;
 
-      .image{
-        width: 100%;
-      }
-   }
+    .image{
+      width: 100%;
+    }
+  }
 
 }
